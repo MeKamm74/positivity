@@ -1,0 +1,15 @@
+ <div style="margin-left:5%; width:50%">
+ 	<h4 ng-if="success" style="color:green">SUCCESS! :D </h4>
+ 	<h4 ng-if="failed" style="color:red">Failed :( </h4>
+    <form name="profileForm">
+	    <md-input-container>
+	        <label>Email address </label>
+	        <input ng-model="email" name="email" required></input>
+	    </md-input-container>
+	    <md-input-container>
+		    <label>New password</label>
+		    <input ng-model="password" name="password"></input>
+		</md-input-container>
+	</form>
+	<md-button ng-click="submit()">Submit</md-button>
+</div>
